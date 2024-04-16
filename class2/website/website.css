@@ -90,7 +90,8 @@ header div a{
 
 }
 
-@media (max-width: 801px) {
+@media (max-width: 801px) 
+{
   
   .card {
     display: grid;
