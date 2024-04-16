@@ -1,0 +1,253 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    
+    width: 100vw;
+    background: #3c4245;
+    color: whitesmoke;
+    font-family:cursive;
+}
+.header{
+  
+    width: 100%;
+    height: 1000px;
+    background-image: url('https://images.unsplash.com/photo-1434725039720-aaad6dd32dfe?q=80&w=1642&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: auto 100%;
+    box-shadow: 2px 2px 2px lightblue;
+    border-radius: 15px;
+}
+header div{
+    height: 100%;
+    grid-template-rows: .3fr .05fr .05fr;
+    display: grid;
+    justify-content: center;
+    row-gap: 5px;;
+   
+}
+
+header div h1{
+    align-self: self-end;
+    font-size: 8vw;
+    text-align: center;
+    -webkit-text-stroke-width: 2.8px;
+    font-weight: bold;
+    -webkit-text-stroke-color: black;
+}
+header div p{
+    
+    justify-self: center;
+    font-size: 3vw;
+    -webkit-text-stroke-width: 1.6px;
+    -webkit-text-stroke-color: black;
+    font-weight: bold;
+}
+header div a{
+    height:auto;
+    font-size: 2.5vw;
+    justify-self: center;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    font-weight: bold;
+}
+
+/*----------------@media Queries--------------------------------*/
+/*----------------Start-----------------------------------------*/
+
+@media (min-width: 802px){
+
+  .ulist{
+    
+    display: flex;
+    justify-content: space-around;
+    list-style: none;   
+}
+.ulist li{
+    font-size: 22px;
+        
+}
+  .nav{
+    
+  width: 97vw;
+  position: fixed;
+  top: 0;       
+  border: 2px solid lightblue;
+   height: 40px;
+   border-radius: 20px;
+   background-color: #352f44;
+   box-shadow: 3px 3px 3px white;
+   padding: 10px;
+}
+
+.card{
+    
+  display: grid;
+  grid-template-columns: 40% 40%;        
+  justify-content: space-around;
+  row-gap: 40px;
+}
+
+}
+
+@media (max-width: 801px) 
+{
+  
+  .card {
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 40px;
+  }
+  .ulist{
+    display: grid;
+    row-gap: 5px;;
+    list-style: none;
+  }
+  .ulist li{
+    border: 1.5px solid lightblue;
+    text-align: center;
+    width: 100%;
+    height:33px;
+    border-radius: 20px;
+   background-color: #352f44;
+   box-shadow: 3px 3px 3px white;
+  }
+  
+}
+/*---------------------@media queries End---------------------------*/
+
+a{   font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none; 
+    color: whitesmoke;
+    
+}
+a:hover{
+    text-decoration: underline;
+    border: 1px solid lightblue;
+    box-shadow: 2px 2px 2px lightblue;
+}
+
+/*------------------for logo-----------------------------------------*/
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  /*----------------------for main css-----------------------------*/
+
+  .main{
+    
+    margin: 100px;
+    
+  }
+  #mhead {
+    padding: 20px;
+    text-align: center;
+    box-shadow: 1px 1px 1px lightblue;
+    border-radius: 12px;
+    background-color: #352f44;
+
+  }
+  /*
+  .card{
+    
+    display: grid;
+    grid-template-columns: 40% 40%;        
+    justify-content: space-around;
+    row-gap: 40px;
+  }*/
+
+  .card div{
+    border: 2px solid lightblue;
+    box-shadow: 2px 2px 2px lightblue;
+    border-radius: 12px;
+    padding: 30px;
+    background-color: #352f44;
+  }
+
+  .card div p:hover{
+    text-decoration: underline;
+  }  
+  .card img:hover{
+    opacity: 0.7
+  }
+  .card img{
+    border: 2px solid lightblue;
+    width: 100%;
+    
+  }
+  /*-------------footer starts here ----------------------------------*/
+  .footer{
+    
+    margin: 100px;
+  }
+  .footer div:nth-of-type(1){
+    margin:20px;
+    border: 2px solid lightblue;
+    box-shadow: 2px 2px 2px lightblue;
+    border-radius: 12px;
+    padding: 30px;
+    background-color: #352f44;
+    
+  }
+  .footer div:nth-of-type(2){
+    
+    margin:20px;
+    border: 2px solid lightblue;
+    box-shadow: 2px 2px 2px lightblue;
+    border-radius: 12px;
+    padding: 30px;
+    background-color: #352f44;
+    
+  }
+  .footer div:nth-of-type(3){
+    margin:20px;
+    border: 2px solid lightblue;
+    box-shadow: 2px 2px 2px lightblue;
+    border-radius: 12px;
+    padding: 30px;
+    background-color: #352f44;
+    
+
+  }
+  .footer div:nth-of-type(3) ul{
+    
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    row-gap: 15px;
+    justify-content: space-around;
+    list-style: none;
+
+  }
+
+  .footer section{
+    border: 2px solid lightblue;
+    box-shadow: 2px 2px 2px lightblue;
+    border-radius: 12px;
+    padding: 30px;
+    background-color: #352f44;
+    margin:20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    
+  }
+
